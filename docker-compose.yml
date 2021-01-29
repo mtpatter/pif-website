@@ -1,0 +1,7 @@
+version: '3'
+services:
+  node:
+    build: .
+    volumes:
+      - .:/srv/jekyll
+    entrypoint: jekyll build
